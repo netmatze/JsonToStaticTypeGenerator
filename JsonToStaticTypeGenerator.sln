@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonToStaticTypeGenerator", "JsonToStaticTypeGenerator\JsonToStaticTypeGenerator.csproj", "{F4FC3316-6FC8-4F1D-8DFA-243B83D5BCE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonConverter", "JsonConverter\JsonConverter.csproj", "{49857311-91B1-4608-A398-3B38E2453BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserCombinators", "ParserCombinators\ParserCombinators.csproj", "{C70B7610-C213-4582-96DE-5E7E2EBD0E81}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs23
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = JsonToStaticTypeGenerator\\JsonToStaticTypeGenerator.csproj
+		SccProjectName1 = JsonToStaticTypeGenerator
+		SccLocalPath1 = JsonToStaticTypeGenerator
+		SccProjectUniqueName2 = JsonConverter\\JsonConverter.csproj
+		SccProjectName2 = JsonConverter
+		SccLocalPath2 = JsonConverter
+		SccProjectUniqueName3 = ParserCombinators\\ParserCombinators.csproj
+		SccProjectName3 = ParserCombinators
+		SccLocalPath3 = ParserCombinators
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4FC3316-6FC8-4F1D-8DFA-243B83D5BCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FC3316-6FC8-4F1D-8DFA-243B83D5BCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FC3316-6FC8-4F1D-8DFA-243B83D5BCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FC3316-6FC8-4F1D-8DFA-243B83D5BCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49857311-91B1-4608-A398-3B38E2453BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49857311-91B1-4608-A398-3B38E2453BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49857311-91B1-4608-A398-3B38E2453BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49857311-91B1-4608-A398-3B38E2453BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70B7610-C213-4582-96DE-5E7E2EBD0E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70B7610-C213-4582-96DE-5E7E2EBD0E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70B7610-C213-4582-96DE-5E7E2EBD0E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70B7610-C213-4582-96DE-5E7E2EBD0E81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

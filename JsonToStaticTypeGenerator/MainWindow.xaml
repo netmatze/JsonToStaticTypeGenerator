@@ -1,0 +1,30 @@
+﻿<Window x:Class="JsonToStaticTypeGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="JsonToStaticTypeConverter" Height="610.375" Width="740">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />            
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="5,5,5,5" TextWrapping="Wrap" Name="txtParserText" Text=" { 'street' : 'Teststreet', 'number' : 1, 'city' : 'Graz' }"/>
+        <Button Content="Close" Name="txtClose" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="70" Height="40" Click="txtClose_Click"/>
+        <Button Content="Generate" Name="txtGenerate" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Margin="0,10,85,0" VerticalAlignment="Top" Width="70" Height="40" Click="txtGenerate_Click"/>
+        <Button Content="Execute" IsEnabled="false"  Name="btnExecute" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Margin="0,10,160,0" VerticalAlignment="Top" Width="70" Height="40" Click="btnExecute_Click"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="Namespace" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="class name" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="folder" VerticalAlignment="Top"/>
+        <TextBox Grid.Row="0" Text="MainTest" Name="txtNamespace" HorizontalAlignment="Left" Height="23" Margin="77,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+        <TextBox Grid.Row="0" Text="Addresse" Name="txtClassname" HorizontalAlignment="Left" Height="23" Margin="77,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+        <TextBox Grid.Row="0" Text="C:\Projekte" Name="txtFolder" HorizontalAlignment="Left" Height="23" Margin="77,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="338,72,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.493,-0.227" Click="btnSelectSourceFolder_Click"/>
+        <CheckBox Name="chkCopyToClipboard" Content="copy to clipboard" Grid.Row="0" Margin="443,76,0,0" />
+        <RadioButton Content="Properties" GroupName="PropertiesOrFields" Name="rbProperties" HorizontalAlignment="Left" Margin="443,16,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton Content="Fields" HorizontalAlignment="Left" IsEnabled="false"  GroupName="PropertiesOrFields" Name="rbFields" Margin="443,37,0,0" VerticalAlignment="Top"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="json code:" VerticalAlignment="Top" Width="358"/>
+    </Grid>
+</Window>
